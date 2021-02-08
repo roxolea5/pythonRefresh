@@ -6,7 +6,7 @@ class Pila:
     def push(self, elemento):
         self.stack.append(elemento)
         print("Elemento '{}' añadido".format(elemento))
-        print ("", self.stack)
+        print (self.stack)
 
     def pop(self):
         if not self.stack:
@@ -26,7 +26,7 @@ class Pila:
             return ultimo
 
     def __str__(self):
-        print(' ', self.stack)
+        return str(self.stack)
 
 mi_pila = Pila()
 
@@ -40,6 +40,7 @@ deleted = mi_pila.pop()
 print (deleted)
 otro_elemento = mi_pila.peek()
 print (otro_elemento)
+print(mi_pila)
 
 """
 mi_pila.quitar()
