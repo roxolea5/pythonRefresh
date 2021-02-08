@@ -1,0 +1,3 @@
+import docstring
+
+help(docstring)
